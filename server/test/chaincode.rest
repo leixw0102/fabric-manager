@@ -1,0 +1,11 @@
+POST  http://localhost:8081/installSepcailChaincode HTTP/1.1
+Content-type: application/json
+
+{
+	"ccPath":"",//chain code localpath
+	"ccVersion":"1.0",
+	"channelName":"mychannel",
+	"hosts":["myhost"]
+}
+
+#README  chaincode_install.sh cli chaincode basic 1.0 myhost orderaddr mychannel

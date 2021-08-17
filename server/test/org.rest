@@ -1,0 +1,38 @@
+POST http://localhost:8081/createOrg HTTP/1.1
+content-type: application/json
+
+{
+    "org": "org1.example.com",
+    "ca": "ca-org1",
+    "ca_addr":"localhost:7054",
+    "identities":[
+        {
+            "name":"peer0",
+            "password":"peer0pw",
+            "idtype":"peer",
+			"ip":"172.38.50.211"
+        },
+        {
+			"name":     "Admin",
+			"password": "Adminpw",
+			"idtype":   "admin",
+			"ip":"172.38.50.211"
+		},
+		{
+			"name":     "user1",
+			"password": "user1pw",
+			"idtype":   "client",
+			"ip":"172.38.50.211"
+		},
+		{
+			"name":     "orderer0",
+			"password": "orderer0pw",
+			"idtype":   "orderer",
+			"ip":"172.38.50.211"
+		}
+    ]
+}
+
+
+// 创建组织后将信息写入mysql，创建联盟后邀请其他组织时查数据库生成configtx.yaml
+//

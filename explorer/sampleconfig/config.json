@@ -1,0 +1,9 @@
+{
+    "license": "Apache-2.0",
+    "network-configs": {
+        "test-network": {
+            "name": "SampleConsortium Network",
+            "profile": "/opt/explorer/app/platform/fabric/SampleConsortium.json"
+        }
+    }
+}

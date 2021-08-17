@@ -1,0 +1,35 @@
+POST http://localhost:8081/createCrypto HTTP/1.1
+Content-type: application/json
+
+{
+    "PeerOrgs":{
+        "Name":"Org1",
+        "Domain":"org1.example.com"
+    },
+    "OrdererOrgs":{
+        "Name":"Orderer",
+        "Domain":"example.com"
+    }
+}
+
+### 
+POST http://localhost:8081/v2/createCrypto HTTP/1.1
+Content-type: application/json
+
+{
+    "PeerOrgs":{
+        "Name":"Org1",
+        "Domain":"org1.example.com"
+    },
+    "OrdererOrgs":{
+        "Name":"Orderer",
+        "Domain":"example.com"
+    }
+}
+### 
+POST http://localhost:8081/v2/downloadCert HTTP/1.1
+Content-type: application/json
+
+{
+    "certs_server":"172.38.50.210:8080"
+}

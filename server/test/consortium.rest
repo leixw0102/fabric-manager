@@ -1,0 +1,16 @@
+POST http://localhost:8081/createConsortium HTTP/1.1
+Content-type: application/json
+
+{
+	"name":"SampleConsortium",
+    "orgs":["org1.example.com"],
+    "init_org":"example.com",
+    "orderer":"orderer"
+}
+###
+POST http://localhost:8081/startConsortium HTTP/1.1
+Content-type: application/json
+
+{
+	"name":"SampleConsortium"
+}

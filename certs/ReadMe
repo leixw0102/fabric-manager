@@ -1,0 +1,8 @@
+
+# cryptogen 版本需要该模块
+
+使用方式
+
+user-->server----etct--->certs 
+
+user--server----etct--->agent <-----certs(download certs)

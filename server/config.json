@@ -1,0 +1,14 @@
+{
+    "etcd":{
+        "endpoints":[
+            "172.38.50.210:2379"
+        ],
+        "timeout":5
+    },
+    "server":{
+        "port":8081,
+        "read_timeout":10,
+        "write_timeout":10,
+        "max_header_bytes":2048
+    }
+}

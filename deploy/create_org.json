@@ -1,0 +1,31 @@
+{
+    "org": "org1.example.com",
+    "ca": "ca-org1",
+    "ca_addr":"localhost:7054",
+    "identities":[
+        {
+            "name":"peer0",
+            "password":"peer0pw",
+            "idtype":"peer",
+			"ip":"172.38.80.33"
+        },
+        {
+			"name":     "Admin",
+			"password": "Adminpw",
+			"idtype":   "admin",
+			"ip":"172.38.80.33"
+		},
+		{
+			"name":     "user1",
+			"password": "user1pw",
+			"idtype":   "client",
+			"ip":"172.38.80.33"
+		},
+		{
+			"name":     "orderer0",
+			"password": "orderer0pw",
+			"idtype":   "orderer",
+			"ip":"172.38.80.33"
+		}
+    ]
+}
