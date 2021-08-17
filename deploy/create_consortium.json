@@ -1,0 +1,6 @@
+{
+	"name":"SampleConsortium",
+    "orgs":[],
+    "init_org":"org1.example.com",
+    "orderer":"orderer0"
+}

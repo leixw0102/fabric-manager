@@ -1,0 +1,22 @@
+{
+    "mysql": {
+        "username": "root",
+        "password": "ehl1234",
+        "host": "192.168.133.130:3306",
+        "db": "defaultdb"
+    },
+    "etcd": {
+        "endpoints": [
+            "192.168.133.130:2379",
+            "172.38.80.104:2379",
+            "172.38.50.210:2379"
+        ],
+        "timeout": 5
+    },
+    "server": {
+        "port": 8080,
+        "read_timeout": 10,
+        "write_timeout": 10,
+        "max_header_bytes": 2048
+    }
+}
